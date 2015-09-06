@@ -35,17 +35,17 @@ public class TranslatePagerTransFormer implements ViewPager.PageTransformer {
             rl.setScaleY((float)Math.max(0.8,1 - Math.abs(position)));
 
             //3D翻转动画
-//            rl.setPivotX(position < 0 ? rl.getWidth() : 0f);
-//            rl.setPivotY(rl.getHeight() * 0.5f);
-//            rl.setRotationY(position * 90);
+            rl.setPivotX(position < 0 ? rl.getWidth() : 0f);
+            rl.setPivotY(rl.getHeight() * 0.5f);
+            rl.setRotationY(position * 90);
             //3D内侧翻转
 //            rl.setPivotX(position < 0 ? rl.getWidth() : 0f);
 //            rl.setPivotY(rl.getHeight() * 0.5f);
 //            rl.setRotationY(-position * 90);
             //绕自己翻转
-            rl.setPivotX(rl.getHeight() * 0.5f);
-            rl.setPivotY(rl.getHeight() * 0.5f);
-            rl.setRotationY(-position * 90);
+//            rl.setPivotX(rl.getHeight() * 0.5f);
+//            rl.setPivotY(rl.getHeight() * 0.5f);
+//            rl.setRotationY(-position * 90);
         }
 
     }
